@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #2efbfb;
+}
+
+.container {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.item {
+    border: 0.2rem solid #2efbfb;
+}
+
+.meme {
+    display: none;
+    padding: 1%;
+}
+
+.meme:hover {
+    cursor: pointer;
+}
+
+.meme:active {
+    cursor: cell;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    padding: 1%;
+    border-bottom: 0.1rem solid aqua;
+    transition: 0.3s;
+    background-color: #beffff;
+}
+
+label:hover {
+    background-color: #6ffbfb;
+}
+
+label:active {
+    background-color: #0cc0c0;
+    color: white;
+}
+
+input {
+    appearance: none;
+    position: absolute;
+}
+
+input:checked + .meme {
+    display: block;
+}
