@@ -32,6 +32,7 @@ h1 {
 
 .meme:active {
     cursor: cell;
+    opacity: 0.5;
 }
 
 label {
@@ -55,7 +56,6 @@ label:active {
 
 input {
     appearance: none;
-    position: absolute;
     transition: all 1s ease-in-out;
 }
 
@@ -68,6 +68,15 @@ input:checked ~ img {
     margin: 0 auto;
 }
 
+.item:hover img {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
 input:checked + label {
     background: url(./assets/up.svg) right no-repeat;
     background-color: #beffff;
@@ -75,6 +84,11 @@ input:checked + label {
 
 input:hover ~ .meme {
     width: 45%;
+}
+
+.container:not(:hover) label{
+    background: transparent;
+    background-color: #beffff;
 }
 
 @media (min-width: 1920px) {
