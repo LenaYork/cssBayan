@@ -19,7 +19,9 @@ h1 {
 
 .meme {
     display: none;
-    padding: 1%;
+    padding: 1% 0;
+    width: 65%;
+    margin: 0 auto;
 }
 
 .meme:hover {
