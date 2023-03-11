@@ -15,13 +15,20 @@ h1 {
 
 .item {
     border: 0.2rem solid #2efbfb;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
 }
 
 .meme {
-    display: none;
+    /* display: none;
+    visibility: hidden; */
     padding: 1% 0;
-    width: 65%;
+    /* width: 45%; */
+    width: 0;
     margin: 0 auto;
+    transition: 1s ease-in-out;
+
 }
 
 .meme:hover {
@@ -36,8 +43,10 @@ label {
     display: block;
     cursor: pointer;
     padding: 1%;
-    border-bottom: 0.1rem solid aqua;
-    transition: 0.3s;
+    /* border-bottom: 0.1rem solid aqua; */
+    color: #7f7f09;
+    transition: all 1s ease-in-out;
+    background: url(./assets/down.svg) right no-repeat;
     background-color: #beffff;
 }
 
@@ -53,8 +62,28 @@ label:active {
 input {
     appearance: none;
     position: absolute;
+    transition: all 1s ease-in-out;
 }
 
-input:checked + .meme {
+/* input:checked + .meme {
     display: block;
+    visibility: visible;
+} */
+
+img {
+    width: 0;
+}
+
+input:checked ~ img {
+    width: 45%;
+    margin: 0 auto;
+}
+
+input:checked + label {
+    background: url(./assets/up.svg) right no-repeat;
+    background-color: #beffff;
+}
+
+input:hover ~ .meme {
+    width: 45%;
 }
