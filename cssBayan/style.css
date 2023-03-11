@@ -14,17 +14,12 @@ h1 {
 }
 
 .item {
-    border: 0.2rem solid #2efbfb;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 .meme {
-    /* display: none;
-    visibility: hidden; */
     padding: 1% 0;
-    /* width: 45%; */
     width: 0;
     margin: 0 auto;
     transition: 1s ease-in-out;
@@ -43,7 +38,6 @@ label {
     display: block;
     cursor: pointer;
     padding: 1%;
-    /* border-bottom: 0.1rem solid aqua; */
     color: #7f7f09;
     transition: all 1s ease-in-out;
     background: url(./assets/down.svg) right no-repeat;
@@ -65,11 +59,6 @@ input {
     transition: all 1s ease-in-out;
 }
 
-/* input:checked + .meme {
-    display: block;
-    visibility: visible;
-} */
-
 img {
     width: 0;
 }
@@ -86,4 +75,34 @@ input:checked + label {
 
 input:hover ~ .meme {
     width: 45%;
+}
+
+@media (min-width: 1920px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    label {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1920px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 820px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    label {
+        font-size: 0.8em;
+    }
 }
