@@ -41,7 +41,6 @@ label {
     padding: 1%;
     color: #7f7f09;
     transition: all 1s ease-in-out;
-    /* background: url(./assets/down.svg) right no-repeat; */
     background-color: #beffff;
 }
 
@@ -78,7 +77,6 @@ input:checked ~ img {
 }
 
 input:checked + label {
-    /* background: url(./assets/up.svg) right no-repeat; */
     background-color: #beffff;
 }
 
